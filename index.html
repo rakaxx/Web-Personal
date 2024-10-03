@@ -10,17 +10,17 @@
 </head>
 <body class="font-carosR">
     <header>
-        <nav class="w-full h-12 fixed bg-white z-10">
+        <nav class="w-full h-12 fixed bg-white z-10 border-b">
             <div class="flex justify-between h-full items-center mx-4">
                 <span class="text-xl">EDELWEIS</span>
-                <button name="menu" onclick="Menu(this)" class="hover:bg-slate-100 px-2 py-0.5"><i class="bi bi-list text-2xl"></i></button>
+                <button name="menu" onclick="Menu(this)" class="px-2 py-0.5"><i class="bi bi-list text-2xl"></i></button>
             </div>
-            <div id="menu" class="absolute bg-white w-full border-b-1 hidden">
+            <div id="menu" class="absolute bg-white w-full border-b hidden">
                 <ul>
-                    <a href="#home"><li class="py-2 pl-4 block hover:bg-slate-100">Home</li></a>
-                    <a href="#services"><li class="py-2 pl-4 block hover:bg-slate-100">Services </li></a>
-                    <a href="#portofolio"><li class="py-2 pl-4 block hover:bg-slate-100">Portofolio</li></a>
-                    <a href="#contact"><li class="py-2 pl-4 block hover:bg-slate-100">Contact</li></a>
+                    <a href="#home"><li class="py-2 pl-4 block">Home</li></a>
+                    <a href="#services"><li class="py-2 pl-4 block">Services </li></a>
+                    <a href="#portofolio"><li class="py-2 pl-4 block">Portofolio</li></a>
+                    <a href="#contact"><li class="py-2 pl-4 block">Contact</li></a>
                 </ul>
             </div>
         </nav>
@@ -150,12 +150,10 @@
                 e.name = "close";
                 list.classList.remove('hidden');
                 list.classList.add('visible'); // Add visible class to show the menu
-                e.classList.remove('hover:bg-slate-100'); // Menghapus efek hover saat tombol ditekan
             } else {
                 e.name = "menu";
                 list.classList.add('hidden');
                 list.classList.remove('visible'); // Remove visible class to hide the menu
-                list.classList.remove('visible'); // Menyembunyikan menus
             }
         }
     </script>    
