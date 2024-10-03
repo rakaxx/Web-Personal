@@ -10,34 +10,34 @@
 </head>
 <body class="font-carosR">
     <header>
-        <nav class="w-full h-12 fixed bg-white z-10 border-b-2">
+        <nav class="w-full h-12 fixed bg-white z-10">
             <div class="flex justify-between h-full items-center mx-4">
                 <span class="text-xl">EDELWEIS</span>
-                <button name="menu" onclick="Menu(this)"><i class="bi bi-list text-2xl"></i></button>
+                <button name="menu" onclick="Menu(this)" class="hover:bg-slate-100 px-2 py-0.5 active:bg-slate-200"><i class="bi bi-list text-2xl"></i></button>
             </div>
             <div id="menu" class="absolute bg-white w-full border-b-2 hidden">
                 <ul>
-                    <a href="#home"><li class="py-2 pl-4 block">Home</li></a>
-                    <a href="#services"><li class="py-2 pl-4 block">Services </li></a>
-                    <a href="#portofolio"><li class="py-2 pl-4 block">Portofolio</li></a>
-                    <a href="#contact"><li class="py-2 pl-4 block">Contact</li></a>
+                    <a href="#home"><li class="py-2 pl-4 block hover:bg-slate-100 active:bg-slate-200">Home</li></a>
+                    <a href="#services"><li class="py-2 pl-4 block hover:bg-slate-100 active:bg-slate-200">Services </li></a>
+                    <a href="#portofolio"><li class="py-2 pl-4 block hover:bg-slate-100 active:bg-slate-200">Portofolio</li></a>
+                    <a href="#contact"><li class="py-2 pl-4 block hover:bg-slate-100 active:bg-slate-200">Contact</li></a>
                 </ul>
             </div>
         </nav>
             </header>
 
     <main>
-        <section id="home" class="h-screen px-4 w-full">
+        <section id="home" class="px-4 w-full bg-background-0">
             <h1 class="text-5xl pt-20 font-carosM tracking-wide">Hello</h1>
             <h1 class="text-5xl font-carosM tracking-wide">I'm Raka</h1>
             <h3 class="text-xs mt-1 ml-1 tracking-wide">Welcome To My Personal Website</h3>
             <div class="max-w-full flex items-center justify-center">
-                <img src="src/img/hero.png" alt="me.png" class="w-64 absolute bottom-0">
+                <img src="src/img/hero.png" alt="me.png" class="mt-7 max-w-full">
             </div>
         </section>
 
-        <section id="services" class="h-screen px-4 font-carosL">
-            <h3 class="pt-7 text-sm tracking-widest ml-0.5 font-carosR">S E R V I C E S</h3>
+        <section id="services" class="px-4 font-carosL">
+            <h3 class="text-sm tracking-widest ml-0.5 font-carosR pt-10">S E R V I C E S</h3>
             <h2 class="text-2xl font-carosM mt-0.5">What Services I Do Provide?</h2>
             <div class="border h-12 rounded-lg flex px-4 items-center mt-7">
                 <i class="bi bi-browser-chrome text-2xl"></i>
@@ -59,51 +59,67 @@
                 <i class="bi bi-file-earmark-spreadsheet text-2xl"></i>
                 <span class="ml-4">Data Entry</span>
             </div>
-            <p class="mt-4 text-xs">I can help you making a good design for 
+            <p class="mt-7 text-xs">I can help you making a good design for 
                 your website with a minimal and modern
                 style, also i can help you as same as for
                 your game UI design or help you creating
                 your own logos, posters, etc. </p>
             <span class="block text-center text-3xl font-carosM mt-6">2</span>
-            <span class="block text-center text-sm">Total Project</span>
+            <span class="block text-center text-sm pb-10">Total Project</span>
         </section>
 
-        <section class="h-screen px-4 font-carosL">
-            <h2 class="text-2xl font-carosM">My Work Experience</h2>
+        <section class="px-4 font-carosL bg-background-0">
+            <h2 class="text-2xl font-carosM pt-5">My Work Experience</h2>
             
-            <span class="block text-center mt-60 opacity-30">No Work Experience Yet</span>
+            <span class="block text-center py-60 opacity-30">No Work Experience Yet</span>
         </section>
 
-        <section id="portofolio" class="h-screen px-4 font-carosL">
-            <h3 class="pt-6 text-sm font-carosR tracking-widest">P O R T O F O L I O</h3>
+        <section id="portofolio" class="px-4 font-carosL ">
+            <h3 class="pt-5 text-sm font-carosR tracking-widest">P O R T O F O L I O</h3>
             <h2 class="text-2xl font-carosM">My Latest Work</h2>
-            <div class="border mt-10    ">
-                <i class="bi bi-image text-9xl block text-center"></i>
-                <span class="block my-2 ml-3 font-carosR">Agenda Mengajar</span>
-                <span class="text-sm border rounded-full py-0.5 px-2 ml-2">Laravel</span>
-                <span class="text-sm border rounded-full py-0.5 px-2">PHP</span>
-                <span class="text-sm border rounded-full py-0.5 px-2">Web</span>
-                <p class="text-xs ml-3 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem inventore, quisquam tempore temporibus praesentium corporis?</p>
+            <div class="border mt-10">
+                <img src="src/img/e-agenda.png" alt="e-agenda.png" class="p-2">
+                <span class="block my-1 ml-3 font-carosR opac">Agenda Mengajar</span>
+                <div class="flex">
+                    <div>
+                        <span class="text-xs pl-1 ml-2">Tags :</span>
+                    </div>
+                    <div>
+                        <span class="text-xs border rounded-full py-0.5 px-2 ml-2">Laravel</span>
+                        <span class="text-xs border rounded-full py-0.5 px-2">PHP</span>
+                        <span class="text-xs border rounded-full py-0.5 px-2">Web</span>
+                    </div>
+                </div>
+                <p class="text-xs mx-3 mt-4">Agenda Mengajar is a web-based application that aims to help teachers create, edit, delete their teaching agenda/agenda mengajar at school.</p>
+                <a href="#" class="text-sm font-carosR text-blue-600 block my-3 mx-3 hover:text-blue-800 active:text-blue-950">see detail -></a>
             </div>
             <div class="border mt-5">
-                <i class="bi bi-image text-9xl block text-center"></i>
-                <span class="block my-2 ml-3 font-carosR">Evabs Game</span>
-                <span class="text-sm border rounded-full py-0.5 px-2 ml-2">Unity</span>
-                <span class="text-sm border rounded-full py-0.5 px-2">C#</span>
-                <span class="text-sm border rounded-full py-0.5 px-2">Game</span>
-                <span class="text-sm border rounded-full py-0.5 px-2">Android</span>
-                <p class="text-xs ml-3 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem inventore, quisquam tempore temporibus praesentium corporis?</p>
+                <img src="src/img/evabs.png" alt="evabs.png" class="p-2">
+                <span class="block my-1 ml-3 font-carosR">Evabs Game</span>
+                <div class="flex">
+                    <div>
+                        <span class="text-xs pl-1 ml-2">Tags :</span>
+                    </div>
+                    <div>
+                        <span class="text-xs border rounded-full py-0.5 px-2 ml-2">Unity</span>
+                        <span class="text-xs border rounded-full py-0.5 px-2">C#</span>
+                        <span class="text-xs border rounded-full py-0.5 px-2">Game</span>
+                        <span class="text-xs border rounded-full py-0.5 px-2 ml-2">Android</span>
+                    </div>
+                </div>
+                <p class="text-xs mx-3 mt-4">This game is an education game for students grade 4th to improving their english skills by increasing the vocabulary with playing this game.</p>
+                <a href="#" class="text-sm font-carosR text-blue-600 block my-3 mx-3 hover:text-blue-800 active:text-blue-950">see detail -></a>
             </div>
         </section>
 
-        <section id="contact" class="h-screen px-4 font-carosL">
-            <h3 class="mt-36 pt-12 text-sm font-carosR tracking-widest">C O N T A C T</h3>
+        <section id="contact" class="px-4 font-carosL bg-background-0">
+            <h3 class="mt-10 pt-5 text-sm font-carosR tracking-widest">C O N T A C T</h3>
             <h2 class="text-2xl font-carosM">Let’s Make Something Amazing Together</h2>
             <form action="https://formspree.io/f/xgvwgjzy" method="POST">
-                <input type="text" name="name" id="name" placeholder="Name" class="border w-full my-1.5 py-1 text-sm mt-7">
-                <input type="email" name="email" id="email" placeholder="Email" class="border w-full my-1.5 py-1 text-sm">
-                <textarea name="message" id="message" placeholder="Message" class="border w-full my-1.5 pb-14 text-sm"></textarea>
-                <button type="submit" class="border rounded-full py-1 px-4 bg-primary-0 font-carosR">Send <i class="bi bi-send"></i></button>
+                <input type="text" name="name" id="name" placeholder="Name" class="border w-full my-1.5 py-1 text-sm mt-7 px-2">
+                <input type="email" name="email" id="email" placeholder="Email" class="border w-full my-1.5 py-1 text-sm px-2">
+                <textarea name="message" id="message" placeholder="Message" class="border w-full my-1.5 pb-14 text-sm p-2"></textarea>
+                <button type="submit" class="border rounded-full py-1 px-4 bg-primary-0 font-carosR hover:bg-buttonHov-0 active:bg-buttonAct-0">Send <i class="bi bi-send"></i></button>
             </form>
             <div class="flex items-center py-1.5 ml-2 mt-16">
                 <i class="bi bi-envelope-at-fill text-4xl"></i>
@@ -118,12 +134,12 @@
                 <span class="text-xs ml-2">@setyvxx</span>
             </div>
             <span class="ml-2 block mt-4 font-carosR">Address:</span>
-            <p class=" ml-2 text-xs">Jl. Raya Sukabumi, Kp. Pasantren, Desa Ciwalen, Gang Taofik II, RT.004/RW.011, Kec. Warungkondang, Kab. Cianjur, Jawa Barat.</p>
+            <p class=" ml-2 text-xs pb-10">Jl. Raya Sukabumi, Kp. Pasantren, Desa Ciwalen, Gang Taofik II, RT.004/RW.011, Kec. Warungkondang, Kab. Cianjur, Jawa Barat.</p>
         </section>
     </main>
 
     <footer>
-        <span class="block text-center text-xs py-2 border-t-2 mt-40">Personal Website Raka Ikbar Setyadireza</span>
+        <span class="block text-center text-xs py-2 border-t-2">Personal Website Raka Ikbar Setyadireza</span>
     </footer>
 
     <script>

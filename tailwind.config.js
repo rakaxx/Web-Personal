@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       colors: {
         primary: ['#FFD874'],
+        background: ['#F8F7F1'],
+        buttonHov: ['#FFCA42'],
+        buttonAct: ['#E5A80A'],
       },
       fontFamily: {
         carosL: ['Caros Light', 'sans'],
