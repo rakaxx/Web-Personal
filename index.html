@@ -10,29 +10,52 @@
 </head>
 <body class="font-carosR">
     <header>
-        <nav class="w-full h-12 fixed bg-white z-10 border-b">
-            <div class="flex justify-between h-full items-center mx-4">
-                <span class="text-xl">EDELWEIS</span>
-                <button name="menu" onclick="Menu(this)" class="px-2 py-0.5"><i class="bi bi-list text-2xl"></i></button>
+        <nav class="w-full h-12 fixed bg-white z-10 border-b md:bg-background-0 md:border-0 md:px-10 md:h-16 md:flex md:justify-between md:items-center xl:px-20 z-50">
+            <div class="flex justify-between h-full items-center mx-4 md:w-40">
+                <span class="text-xl md:text-2xl">EDELWEIS</span>
+                <button name="menu" onclick="Menu(this)" class="px-2 py-0.5 md:hidden"><i class="bi bi-list text-2xl"></i></button>
             </div>
-            <div id="menu" class="absolute bg-white w-full border-b hidden">
-                <ul>
-                    <a href="#home"><li class="py-2 pl-4 block">Home</li></a>
-                    <a href="#services"><li class="py-2 pl-4 block">Services </li></a>
-                    <a href="#portofolio"><li class="py-2 pl-4 block">Portofolio</li></a>
-                    <a href="#contact"><li class="py-2 pl-4 block">Contact</li></a>
+            <div id="menu" class="absolute bg-white w-full border-b hidden md:bg-background-0 md:border-b-0 md:block md:static md:w-max">
+                <ul class="md:flex md:justify-between">
+                    <a href="#home" class="py-2 pl-4 block md:inline xl:mx-10"><li>Home</li></a>
+                    <a href="#services" class="py-2 pl-4 block md:inline xl:mx-10"><li>Services </li></a>
+                    <a href="#portofolio" class="py-2 pl-4 block md:inline xl:mx-10"><li>Portofolio</li></a>
+                    <a href="#contact" class="py-2 pl-4 block md:inline xl:mx-10"><li>Contact</li></a>
+                    <button class="hidden md:inline-block ml-4 py-1 border-neutral-700 px-4 border bg-primary-0 xl:mx-10">Resume <i class="bi bi-arrow-bar-right"></i></button>
                 </ul>
             </div>
         </nav>
-            </header>
+    </header>
 
     <main>
-        <section id="home" class="px-4 w-full bg-background-0">
-            <h1 class="text-5xl pt-20 font-carosM tracking-wide">Hello</h1>
-            <h1 class="text-5xl font-carosM tracking-wide">I'm Raka</h1>
-            <h3 class="text-xs mt-1 ml-1 tracking-wide">Welcome To My Personal Website</h3>
-            <div class="max-w-full flex items-center justify-center">
-                <img src="src/img/hero.png" alt="me.png" class="mt-7 max-w-full">
+        <section id="home" class="px-4 w-full bg-background-0 md:px-14 md:h-screen md:relative xl:px-60">
+            <div class="md:grid md:grid-cols-2 md:h-full md:justify-center">
+                <div class="z-30 md:absolute top-10">
+                    <h1 class="text-5xl pt-20 font-carosM tracking-wide md:text-6xl xl:font-carosR xl:tracking-wide">Hello</h1>
+                    <h1 class="text-5xl font-carosM tracking-wide md:text-6xl xl:font-carosR xl:tracking-wide">I'm Raka</h1>
+                    <h3 class="text-xs mt-1 ml-1 tracking-wide md:text-sm md:tracking-wider xl:tracking-widest">Welcome To My Personal Website</h3>
+                </div>
+                <div class="hidden md:flex md:absolute md:top-36 right-16 w-[30%] text-right xl:right-60 xl:w-[25%]">
+                    <h3 class="text-xs mt-1 ml-1 tracking-wide md:text-sm md:tracking-wider">I'm a frontend website developer,
+                        and i'm also an UI/UX designer. I really
+                        love to design, with design you can make
+                        a life.</h3>
+                </div>
+                <div class="hidden md:block md:absolute md:bottom-10">
+                    <h3 class="text-xs mt-1 ml-1 tracking-wide md:text-xl md:tracking-wider">DEVELOPER</h3>
+                    <h1 class="text-5xl first-letter font-carosM tracking-wide md:text-6xl xl:font-carosR xl:tracking-wide">FRONTEND</h1>
+                    <h1 class="text-5xl font-carosM tracking-wide md:text-6xl xl:font-carosR xl:tracking-wide">WEBSITE</h1>
+                </div>
+                <div class="hidden md:flex md:justify-end md:items-center text-right z-30 md:absolute bottom-10 right-10 w-[40%] xl:w-[30%] xl:right-60">
+                    <h3 class="text-xs ml-1 tracking-wide md:text-lg md:tracking-wider pl-28">Let's Scrool Down
+                        To See
+                        The Services I Do</h3>
+                    <i class="bi bi-arrow-down text-5xl"></i>
+                </div>
+            </div>
+            <div class="max-w-full md:h-full flex items-center justify-center md:z-20">
+                <img src="src/img/hero.png" alt="me.png" class="mt-7 max-w-full md:hidden">
+                <img src="src/img/hero-md.png" alt="me.png" class="hidden md:inline mt-7 max-w-full md:absolute md:bottom-0 md:z-20 md:h-[100%] xl:h-[107%]">
             </div>
         </section>
 
