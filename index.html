@@ -150,10 +150,12 @@
                 e.name = "close";
                 list.classList.remove('hidden');
                 list.classList.add('visible'); // Add visible class to show the menu
+                e.classList.remove('hover:bg-slate-100'); // Menghapus efek hover saat tombol ditekan
             } else {
                 e.name = "menu";
                 list.classList.add('hidden');
                 list.classList.remove('visible'); // Remove visible class to hide the menu
+                list.classList.remove('visible'); // Menyembunyikan menus
             }
         }
     </script>    
