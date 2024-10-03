@@ -13,14 +13,14 @@
         <nav class="w-full h-12 fixed bg-white z-10">
             <div class="flex justify-between h-full items-center mx-4">
                 <span class="text-xl">EDELWEIS</span>
-                <button name="menu" onclick="Menu(this)" class="hover:bg-slate-100 px-2 py-0.5 active:bg-slate-200"><i class="bi bi-list text-2xl"></i></button>
+                <button name="menu" onclick="Menu(this)" class="hover:bg-slate-100 px-2 py-0.5"><i class="bi bi-list text-2xl"></i></button>
             </div>
-            <div id="menu" class="absolute bg-white w-full border-b-2 hidden">
+            <div id="menu" class="absolute bg-white w-full border-b-1 hidden">
                 <ul>
-                    <a href="#home"><li class="py-2 pl-4 block hover:bg-slate-100 active:bg-slate-200">Home</li></a>
-                    <a href="#services"><li class="py-2 pl-4 block hover:bg-slate-100 active:bg-slate-200">Services </li></a>
-                    <a href="#portofolio"><li class="py-2 pl-4 block hover:bg-slate-100 active:bg-slate-200">Portofolio</li></a>
-                    <a href="#contact"><li class="py-2 pl-4 block hover:bg-slate-100 active:bg-slate-200">Contact</li></a>
+                    <a href="#home"><li class="py-2 pl-4 block hover:bg-slate-100">Home</li></a>
+                    <a href="#services"><li class="py-2 pl-4 block hover:bg-slate-100">Services </li></a>
+                    <a href="#portofolio"><li class="py-2 pl-4 block hover:bg-slate-100">Portofolio</li></a>
+                    <a href="#contact"><li class="py-2 pl-4 block hover:bg-slate-100">Contact</li></a>
                 </ul>
             </div>
         </nav>
@@ -116,10 +116,10 @@
             <h3 class="mt-10 pt-5 text-sm font-carosR tracking-widest">C O N T A C T</h3>
             <h2 class="text-2xl font-carosM">Let’s Make Something Amazing Together</h2>
             <form action="https://formspree.io/f/xgvwgjzy" method="POST">
-                <input type="text" name="name" id="name" placeholder="Name" class="border w-full my-1.5 py-1 text-sm mt-7 px-2">
-                <input type="email" name="email" id="email" placeholder="Email" class="border w-full my-1.5 py-1 text-sm px-2">
-                <textarea name="message" id="message" placeholder="Message" class="border w-full my-1.5 pb-14 text-sm p-2"></textarea>
-                <button type="submit" class="border rounded-full py-1 px-4 bg-primary-0 font-carosR hover:bg-buttonHov-0 active:bg-buttonAct-0">Send <i class="bi bi-send"></i></button>
+                <input type="text" name="name" id="name" placeholder="Name" class="border w-full my-1.5 py-1 text-sm mt-7 px-2" required>
+                <input type="email" name="email" id="email" placeholder="Email" class="border w-full my-1.5 py-1 text-sm px-2" required>
+                <textarea name="message" id="message" placeholder="Message" class="border w-full my-1.5 pb-14 text-sm p-2" required></textarea>
+                <button type="submit" class="border rounded-full py-1 px-4 bg-primary-0 font-carosR hover:bg-buttonHov-0">Send <i class="bi bi-send"></i></button>
             </form>
             <div class="flex items-center py-1.5 ml-2 mt-16">
                 <i class="bi bi-envelope-at-fill text-4xl"></i>
