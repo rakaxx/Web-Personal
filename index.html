@@ -10,7 +10,7 @@
 </head>
 <body class="font-carosR">
     <header>
-        <nav class="w-full h-12 fixed bg-white z-10 border-b md:bg-background-0 md:border-0 md:px-10 md:h-16 md:flex md:justify-between md:items-center xl:px-20 z-50">
+        <nav class="w-full h-12 fixed bg-white border-b md:bg-background-0 md:border-0 md:px-10 md:h-16 md:flex md:justify-between md:items-center xl:px-20 z-50">
             <div class="flex justify-between h-full items-center mx-4 md:w-40">
                 <span class="text-xl md:text-2xl">EDELWEIS</span>
                 <button name="menu" onclick="Menu(this)" class="px-2 py-0.5 md:hidden"><i class="bi bi-list text-2xl"></i></button>
@@ -59,105 +59,135 @@
             </div>
         </section>
 
-        <section id="services" class="px-4 font-carosL">
-            <h3 class="text-sm tracking-widest ml-0.5 font-carosR pt-10">S E R V I C E S</h3>
-            <h2 class="text-2xl font-carosM mt-0.5">What Services I Do Provide?</h2>
-            <div class="border h-12 rounded-lg flex px-4 items-center mt-7">
-                <i class="bi bi-browser-chrome text-2xl"></i>
-                <span class="ml-4">Frontend Web Develop</span>
+        <section id="services" class="px-4 font-carosL md:px-10 md:ml-4 xl:px-20 md:py-5">
+            <div class="md:flex md:justify-between md:flex-row-reverse">
+                <div class="md:w-[50%] xl:mr-6">
+                    <h3 class="text-sm tracking-widest ml-0.5 font-carosR pt-10 xl:text-base">S E R V I C E S</h3>
+                    <h2 class="text-2xl font-carosM mt-0.5 md:text-3xl xl:text-4xl">What Services I Do Provide?</h2>
+                    <div class="hidden md:block">
+                        <p class="mt-7 text-xs md:text-sm md:mt-5 xl:text-base xl:mb-10">I can help you making a good design for 
+                            your website with a minimal and modern
+                            style, also i can help you as same as for
+                            your game UI design or help you creating
+                            your own logos, posters, etc. </p>
+                        <p class="md:text-sm md:mt-5 xl:text-base xl:mb-10">At this point, my frontend skill is on the
+                            above among all of services i served.</p>
+                        <p class="md:text-sm md:mt-5 xl:text-base">Here the numbers of the projects
+                            I have done.</p>
+                        <span class="block text-center text-3xl font-carosM mt-6 md:mt-16 md:text-5xl xl:text-6xl xl:mt-24">2</span>
+                        <span class="block text-center text-sm pb-20 md:text-base xl:text-lg">Total Project</span>
+                    </div>
+                </div>
+                <div class="md:w-[40%] md:mt-10">
+                    <div class="border h-12 rounded-lg flex px-4 items-center mt-7 md:h-20 md:border-neutral-400 xl:h-24">
+                        <i class="bi bi-browser-chrome text-2xl md:text-3xl"></i>
+                        <span class="ml-4 md:text-lg">Frontend Web Develop</span>
+                    </div>
+                    <div class="border h-12 rounded-lg flex px-4 items-center mt-2 md:h-20 md:border-neutral-400 xl:h-24">
+                        <i class="bi bi-window-fullscreen text-2xl md:text-3xl"></i>
+                        <span class="ml-4 md:text-lg">UI/UX Design</span>
+                    </div>
+                    <div class="border h-12 rounded-lg flex px-4 items-center mt-2 md:h-20 md:border-neutral-400 xl:h-24">
+                        <i class="bi bi-vector-pen text-2xl md:text-3xl"></i>
+                        <span class="ml-4 md:text-lg">Graphic Design</span>
+                    </div>
+                    <div class="border h-12 rounded-lg flex px-4 items-center mt-2 md:h-20 md:border-neutral-400 xl:h-24">
+                        <i class="bi bi-controller text-2xl md:text-3xl"></i>
+                        <span class="ml-4 md:text-lg">Game develop</span>
+                    </div>
+                    <div class="border h-12 rounded-lg flex px-4 items-center mt-2 md:h-20 md:mb-16 md:border-neutral-400 xl:h-24">
+                        <i class="bi bi-file-earmark-spreadsheet text-2xl md:text-3xl"></i>
+                        <span class="ml-4 md:text-lg">Data Entry</span>
+                    </div>
+                </div>
             </div>
-            <div class="border h-12 rounded-lg flex px-4 items-center mt-2">
-                <i class="bi bi-window-fullscreen text-2xl"></i>
-                <span class="ml-4">UI/UX Design</span>
+            <div class="md:hidden">
+                <p class="mt-7 text-xs">I can help you making a good design for 
+                    your website with a minimal and modern
+                    style, also i can help you as same as for
+                    your game UI design or help you creating
+                    your own logos, posters, etc. </p>
+                <span class="block text-center text-3xl font-carosM mt-6">2</span>
+                <span class="block text-center text-sm pb-10">Total Project</span>
             </div>
-            <div class="border h-12 rounded-lg flex px-4 items-center mt-2">
-                <i class="bi bi-vector-pen text-2xl"></i>
-                <span class="ml-4">Graphic Design</span>
-            </div>
-            <div class="border h-12 rounded-lg flex px-4 items-center mt-2">
-                <i class="bi bi-controller text-2xl"></i>
-                <span class="ml-4">Game develop</span>
-            </div>
-            <div class="border h-12 rounded-lg flex px-4 items-center mt-2">
-                <i class="bi bi-file-earmark-spreadsheet text-2xl"></i>
-                <span class="ml-4">Data Entry</span>
-            </div>
-            <p class="mt-7 text-xs">I can help you making a good design for 
-                your website with a minimal and modern
-                style, also i can help you as same as for
-                your game UI design or help you creating
-                your own logos, posters, etc. </p>
-            <span class="block text-center text-3xl font-carosM mt-6">2</span>
-            <span class="block text-center text-sm pb-10">Total Project</span>
         </section>
 
-        <section class="px-4 font-carosL bg-background-0">
-            <h2 class="text-2xl font-carosM pt-5">My Work Experience</h2>
+        <section class="px-4 font-carosL bg-background-0 md:py-5">
+            <h2 class="text-2xl font-carosM pt-5 md:text-center md:text-3xl xl:text-4xl">My Work Experience</h2>
             
             <span class="block text-center py-60 opacity-30">No Work Experience Yet</span>
         </section>
 
-        <section id="portofolio" class="px-4 font-carosL ">
-            <h3 class="pt-5 text-sm font-carosR tracking-widest">P O R T O F O L I O</h3>
-            <h2 class="text-2xl font-carosM">My Latest Work</h2>
-            <div class="border mt-10">
-                <img src="src/img/e-agenda.png" alt="e-agenda.png" class="p-2">
-                <span class="block my-1 ml-3 font-carosR opac">Agenda Mengajar</span>
-                <div class="flex">
-                    <div>
-                        <span class="text-xs pl-1 ml-2">Tags :</span>
+        <section id="portofolio" class="px-4 font-carosL md:py-5 md:px-14 xl:px-24 xl:mr-6">
+            <h3 class="pt-5 text-sm font-carosR tracking-widest md:text-base">P O R T O F O L I O</h3>
+            <h2 class="text-2xl font-carosM md:text-3xl xl:text-4xl">My Latest Work</h2>
+            <div class="md:grid md:grid-cols-2 md:gap-5 xl:grid-cols-3">
+                <div class="border mt-10">
+                    <img src="src/img/e-agenda.png" alt="e-agenda.png" class="p-2 mx-auto md:w-[100%]">
+                    <span class="block my-1 ml-3 font-carosR md:text-xl">Agenda Mengajar</span>
+                    <div class="flex">
+                        <div>
+                            <span class="text-xs pl-1 ml-2">Tags :</span>
+                        </div>
+                        <div>
+                            <span class="text-xs border rounded-full py-0.5 px-2 ml-2">Laravel</span>
+                            <span class="text-xs border rounded-full py-0.5 px-2">PHP</span>
+                            <span class="text-xs border rounded-full py-0.5 px-2">Web</span>
+                        </div>
                     </div>
-                    <div>
-                        <span class="text-xs border rounded-full py-0.5 px-2 ml-2">Laravel</span>
-                        <span class="text-xs border rounded-full py-0.5 px-2">PHP</span>
-                        <span class="text-xs border rounded-full py-0.5 px-2">Web</span>
-                    </div>
+                    <p class="text-xs mx-3 mt-4 md:text-sm">Agenda Mengajar is a web-based application that aims to help teachers create, edit, delete their teaching agenda/agenda mengajar at school.</p>
+                    <a href="#" class="text-sm font-carosR text-blue-600 block my-3 mx-3 hover:text-blue-800 active:text-blue-950 md:text-base">see detail -></a>
                 </div>
-                <p class="text-xs mx-3 mt-4">Agenda Mengajar is a web-based application that aims to help teachers create, edit, delete their teaching agenda/agenda mengajar at school.</p>
-                <a href="#" class="text-sm font-carosR text-blue-600 block my-3 mx-3 hover:text-blue-800 active:text-blue-950">see detail -></a>
-            </div>
-            <div class="border mt-5">
-                <img src="src/img/evabs.png" alt="evabs.png" class="p-2">
-                <span class="block my-1 ml-3 font-carosR">Evabs Game</span>
-                <div class="flex">
-                    <div>
-                        <span class="text-xs pl-1 ml-2">Tags :</span>
+                <div class="border mt-5 md:mt-10">
+                    <img src="src/img/evabs.png" alt="evabs.png" class="p-2 mx-auto md:w-[90%]">
+                    <span class="block my-1 ml-3 font-carosR md:text-xl">Evabs Game</span>
+                    <div class="flex">
+                        <div>
+                            <span class="text-xs pl-1 ml-2">Tags :</span>
+                        </div>
+                        <div>
+                            <span class="text-xs border rounded-full py-0.5 px-2 ml-2">Unity</span>
+                            <span class="text-xs border rounded-full py-0.5 px-2">C#</span>
+                            <span class="text-xs border rounded-full py-0.5 px-2">Game</span>
+                            <span class="text-xs border rounded-full py-0.5 px-2 ml-2">Android</span>
+                        </div>
                     </div>
-                    <div>
-                        <span class="text-xs border rounded-full py-0.5 px-2 ml-2">Unity</span>
-                        <span class="text-xs border rounded-full py-0.5 px-2">C#</span>
-                        <span class="text-xs border rounded-full py-0.5 px-2">Game</span>
-                        <span class="text-xs border rounded-full py-0.5 px-2 ml-2">Android</span>
-                    </div>
+                    <p class="text-xs mx-3 mt-4 md:text-sm">This game is an education game for students grade 4th to improving their english skills by increasing the vocabulary with playing this game.</p>
+                    <a href="#" class="text-sm font-carosR text-blue-600 block my-3 mx-3 hover:text-blue-800 active:text-blue-950 md:text-base">see detail -></a>
                 </div>
-                <p class="text-xs mx-3 mt-4">This game is an education game for students grade 4th to improving their english skills by increasing the vocabulary with playing this game.</p>
-                <a href="#" class="text-sm font-carosR text-blue-600 block my-3 mx-3 hover:text-blue-800 active:text-blue-950">see detail -></a>
             </div>
         </section>
 
-        <section id="contact" class="px-4 font-carosL bg-background-0">
-            <h3 class="mt-10 pt-5 text-sm font-carosR tracking-widest">C O N T A C T</h3>
-            <h2 class="text-2xl font-carosM">Let’s Make Something Amazing Together</h2>
-            <form action="https://formspree.io/f/xgvwgjzy" method="POST">
-                <input type="text" name="name" id="name" placeholder="Name" class="border w-full my-1.5 py-1 text-sm mt-7 px-2" required>
-                <input type="email" name="email" id="email" placeholder="Email" class="border w-full my-1.5 py-1 text-sm px-2" required>
-                <textarea name="message" id="message" placeholder="Message" class="border w-full my-1.5 pb-14 text-sm p-2" required></textarea>
-                <button type="submit" class="border rounded-full py-1 px-4 bg-primary-0 font-carosR hover:bg-buttonHov-0">Send <i class="bi bi-send"></i></button>
-            </form>
-            <div class="flex items-center py-1.5 ml-2 mt-16">
-                <i class="bi bi-envelope-at-fill text-4xl"></i>
-            <span class="text-xs ml-2">rakaikbarsetyadireza@gmail.com</span>
+        <section id="contact" class="px-4 font-carosL bg-background-0 md:py-5 md:px-14 xl:px-24">
+            <h3 class="pt-5 text-sm font-carosR tracking-widest md:text-base md:text-center">C O N T A C T</h3>
+            <h2 class="text-2xl font-carosM md:text-4xl md:text-center xl:mb-20">Let’s Make Something Amazing Together</h2>
+            <div class="md:flex md:mt-10">
+                <div class="md:w-[50%]">
+                    <p class="hidden xl:block text-center">Send me a message here for a business!</p>
+                    <form action="https://formspree.io/f/xgvwgjzy" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Name" class="border w-full my-1.5 py-1 text-sm mt-7 px-2 md:py-2" required>
+                        <input type="email" name="email" id="email" placeholder="Email" class="border w-full my-1.5 py-1 text-sm px-2 md:py-2" required>
+                        <textarea name="message" id="message" placeholder="Message" class="border w-full my-1.5 pb-14 text-sm p-2 md:pb-24" required></textarea>
+                        <button type="submit" class="border rounded-full py-1 px-4 bg-primary-0 font-carosR hover:bg-buttonHov-0 md:px-5 md:mb-5">Send <i class="bi bi-send"></i></button>
+                    </form>
+                </div>
+                <div class="md:w-[50%] md:ml-10">
+                    <div class="flex items-center py-1.5 ml-2 mt-16 md:mt-5 xl:mt-10">
+                        <i class="bi bi-envelope-at-fill text-4xl xl:text-5xl"></i>
+                    <span class="text-xs ml-2 xl:text-sm">rakaikbarsetyadireza@gmail.com</span>
+                    </div>
+                    <div class="flex items-center py-1.5 ml-2">
+                        <i class="bi bi-linkedin text-4xl xl:text-5xl"></i>
+                    <span class="text-xs ml-2 xl:text-sm">Raka Ikbar Setyadireza</span>
+                    </div>
+                    <div class="flex items-center py-1.5 ml-2">
+                        <i class="bi bi-instagram text-4xl xl:text-5xl"></i>
+                        <span class="text-xs ml-2 xl:text-sm">@setyvxx</span>
+                    </div>
+                    <span class="ml-2 block mt-4 font-carosR">Address:</span>
+                    <p class=" ml-2 text-xs pb-10 xl:text-sm">Jl. Raya Sukabumi, Kp. Pasantren, Desa Ciwalen, Gang Taofik II, RT.004/RW.011, Kec. Warungkondang, Kab. Cianjur, Jawa Barat.</p>
+                </div>
             </div>
-            <div class="flex items-center py-1.5 ml-2">
-                <i class="bi bi-linkedin text-4xl"></i>
-            <span class="text-xs ml-2">Raka Ikbar Setyadireza</span>
-            </div>
-            <div class="flex items-center py-1.5 ml-2">
-                <i class="bi bi-instagram text-4xl"></i>
-                <span class="text-xs ml-2">@setyvxx</span>
-            </div>
-            <span class="ml-2 block mt-4 font-carosR">Address:</span>
-            <p class=" ml-2 text-xs pb-10">Jl. Raya Sukabumi, Kp. Pasantren, Desa Ciwalen, Gang Taofik II, RT.004/RW.011, Kec. Warungkondang, Kab. Cianjur, Jawa Barat.</p>
         </section>
     </main>
 
